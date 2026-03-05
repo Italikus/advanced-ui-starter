@@ -1,16 +1,94 @@
-# React + Vite
+# Advanced UI Starter - Strona Wizytówkowa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Prosta strona wizytówkowa zbudowana w React i Vite. Projekt zawiera komponenty wielokrotnego użytku oraz responsywny design.
 
-Currently, two official plugins are available:
+## Opis Projektu
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplikacja demonstruje budowanie nowoczesnego interfejsu użytkownika z wykorzystaniem React i bundlera Vite. Zawiera:
 
-## React Compiler
+- **Header** - Nagłówek strony z informacjami o autorze
+- **Footer** - Stopka zawierająca linki i informacje dodatkowe
+- **Button** - Przykładowy komponent przycisku wielokrotnego użytku
+- **Responsive Design** - Strona dostosowuje się do różnych rozmiarów ekranu
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Struktura Projektu
 
-## Expanding the ESLint configuration
+```
+src/
+├── components/        # Komponenty wielokrotnego użytku
+│   ├── Header.jsx    # Komponent nagłówka
+│   ├── Footer.jsx    # Komponent stopki
+│   ├── Button.jsx    # Komponent przycisku
+│   ├── Header.css
+│   ├── Footer.css
+│   └── Button.css
+├── App.jsx           # Główny komponent aplikacji
+├── App.css           # Style głównej aplikacji
+├── main.jsx          # Punkt wejścia aplikacji
+└── index.css         # Style globalne
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologie
+
+- **React 19** - Biblioteka do budowania interfejsu użytkownika
+- **Vite** - Szybki bundler i dev server
+- **CSS3** - Stylizacja komponentów
+- **ESLint** - Linter do kontroli jakości kodu
+- **Prettier** - Narzędzie do formatowania kodu
+
+## Instalacja
+
+1. Klonowanie repozytorium:
+
+```bash
+git clone https://github.com/Italikus/advanced-ui-starter.git
+cd advanced-ui-starter
+```
+
+2. Instalacja zależności:
+
+```bash
+npm install
+```
+
+## Uruchomienie
+
+### Tryb projektowania (Development)
+
+```bash
+npm run dev
+```
+
+Aplikacja będzie dostępna pod adresem: `http://localhost:5173`
+
+Serwer obsługuje Hot Module Replacement (HMR), co oznacza, że zmiany w kodzie będą widoczne natychmiast po zapisaniu pliku.
+
+### Build produkcyjny
+
+```bash
+npm run build
+```
+
+Zminimalizowana wersja aplikacji będzie dostępna w folderze `dist/`
+
+### Preview wersji produkcyjnej
+
+```bash
+npm run preview
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+Sprawdza jakość kodu zgodnie z regułami ESLint.
+
+### Formatowanie kodu
+
+```bash
+npm run format
+```
+
+Automatyczne formatowanie kodu w projekcie.
