@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-section">
           <h3>Kontakt</h3>
           <ul>
-            <li><a href="mailto:jan@example.com">jan@example.com</a></li>
+            <li><a href="mailto:bp@gmail.com">bp@gmail.com</a></li>
             <li><a href="tel:+48123456789">+48 123 456 789</a></li>
           </ul>
         </div>
@@ -22,11 +22,11 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h3>Lokalizacja</h3>
-          <p>Warszawa, Polska</p>
+          <p>Tarnów, Polska</p>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {year} Jan Kowalski. Wszystkie prawa zastrzeżone.</p>
+        <p>&copy; {year} Bartłomiej Podlewski Lab1. Wszystkie prawa zastrzeżone.</p>
       </div>
     </footer>
   )

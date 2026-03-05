@@ -29,7 +29,7 @@ function App() {
               </div>
             </div>
             <div className="hero-image">
-              <div className="avatar">JK</div>
+              <div className="avatar">BP</div>
             </div>
           </div>
         </section>
